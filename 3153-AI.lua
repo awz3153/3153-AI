@@ -50,7 +50,7 @@ UICorner_2.Parent = EnableAI
 
 -- Scripts:
 
-local function ISRF_fake_script() -- Robot.Robot 
+local function NQWRG_fake_script() -- Robot.Robot 
 	local script = Instance.new('LocalScript', Robot)
 
 	local chatservice = game:GetService("TextChatService")
@@ -79,7 +79,7 @@ local function ISRF_fake_script() -- Robot.Robot
 	
 	local function getsecondPhrases()
 		phrases = {}
-		for i,v in ipairs(getgenv().BotConfig.EncounterPhrases[1]) do
+		for i,v in ipairs(getgenv().SpeechConfig.SpeechPhrases[1]) do
 			table.insert(speech,v)
 		end
 	end
@@ -270,4 +270,4 @@ local function ISRF_fake_script() -- Robot.Robot
 	task.spawn(easterpf)
 	task.spawn(pfstart)
 end
-coroutine.wrap(ISRF_fake_script)()
+coroutine.wrap(NQWRG_fake_script)()
