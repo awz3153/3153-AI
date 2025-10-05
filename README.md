@@ -56,5 +56,5 @@ getgenv().Blacklist = {
 }
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/awz3153/3153-AI/refs/heads/main/3153-AI.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/awz3153/3153-AI/refs/heads/main/3153-AI%20Final"))()
 ```
