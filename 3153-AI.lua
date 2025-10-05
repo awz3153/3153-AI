@@ -1,5 +1,5 @@
 -- Gui to Lua
--- Version: 3.2
+-- Version: 3.153
 
 -- Instances:
 
@@ -50,7 +50,7 @@ UICorner_2.Parent = EnableAI
 
 -- Scripts:
 
-local function NQWRG_fake_script() -- Robot.Robot 
+local function YWIQFET_fake_script() -- Robot.Robot 
 	local script = Instance.new('LocalScript', Robot)
 
 	local chatservice = game:GetService("TextChatService")
@@ -75,16 +75,18 @@ local function NQWRG_fake_script() -- Robot.Robot
 		end
 	end
 	
-	task.spawn(getphrases)
-	
 	local function getsecondPhrases()
-		phrases = {}
+		speech = {}
 		for i,v in ipairs(getgenv().SpeechConfig.SpeechPhrases[1]) do
 			table.insert(speech,v)
 		end
 	end
 	
-	task.spawn(getsecondPhrases)
+	getphrases()
+	getsecondPhrases()
+	
+	print("Loaded phrases:", phrases)
+	print("Loaded speech phrases:", speech)
 	
 	game.Players.PlayerAdded:Connect(function(plr)
 		for i,v in pairs(blacklisted) do
@@ -270,4 +272,4 @@ local function NQWRG_fake_script() -- Robot.Robot
 	task.spawn(easterpf)
 	task.spawn(pfstart)
 end
-coroutine.wrap(NQWRG_fake_script)()
+coroutine.wrap(YWIQFET_fake_script)()
