@@ -13,8 +13,11 @@ getgenv().BotConfig = {
 			"this game isn't worth it",
 			"meow"
 		}
-	},
-	EncounterPhrases = {
+	}
+}
+
+getgenv().SpeechConfig = {
+	SpeechPhrases = {
 		{
 			"hey",
 			"did you know awz3k was banned from this game",
