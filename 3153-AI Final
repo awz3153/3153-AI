@@ -261,7 +261,7 @@ local function NAIK_fake_script() -- Robot.Robot
 	end
 	
 	local function easterpf()
-		while task.wait(math.random(10000,60000)/1000) do
+		while task.wait(math.random(5000,15000)/1000) do
 			if enabled == true then
 				task.spawn(refreshroots)
 				sentient()
